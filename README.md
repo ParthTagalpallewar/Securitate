@@ -10,7 +10,7 @@ friends, relatives and the peoples in the surrounding
 
 ## SECURITATE a single application with multiple security related functionalities.
 
-###Every Securitate user will get a feature like 
+##Every Securitate user will get a feature like 
 - Insecure Dange Alert (SOS)
 - Remote Lock Security
 - Anti Stolen Pocket Mode
