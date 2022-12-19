@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ChargingAlert">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="30dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginBottom="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+            android:layout_height="wrap_content"
+            android:text="Charging Safety"/>
+
+        <Switch
+
+            android:id="@+id/switch_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            />
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textSize="16sp"
+        android:text="This feature is in use when we put our phone on charge in crowded area. It will rings your phone when someone removes charger."
+        android:layout_marginBottom="30dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textSize="18sp"
+        android:text="Steps to use : "
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textSize="16sp"
+        android:text="Step 1: First, Put Your Phone On Charge."
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textSize="16sp"
+        android:text="Step 2: Then turn on Charging Safety feature by click on switch button."
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textSize="16sp"
+        android:text="(Note: Turning on Charging Safety feature before plugging your phone on charge will not work !)"
+        android:layout_marginBottom="10dp"
+        />
+
+
+
+
+
+</LinearLayout>

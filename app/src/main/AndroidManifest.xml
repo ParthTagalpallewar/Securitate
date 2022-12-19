@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- Call me Back Permissions -->
+    <uses-permission android:name="android.permission.ANSWER_PHONE_CALLS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" /> <!-- SOS Notification Permissions -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.Reciever" />
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/securitate_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/securitate_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+        <activity android:name=".RemoteLock"></activity>
+        <activity android:name=".ChargingAlert"></activity>
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SosActivity" />
+        <activity android:name=".CallMeBackActivity" />
+        <activity android:name=".Pocket_Mode" />
+        <activity android:name=".Home_page" />
+        <activity android:name=".new_user_registration" />
+        <activity android:name=".MainActivity" /> <!-- Call Receiver -->
+        <receiver
+            android:name=".CallReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver> <!-- Charge Receiver -->
+        <receiver android:name=".ChargeReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".RemoteLockReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name= ".DeviceAdmin"
+            android:label= "@string/app_name"
+            android:permission= "android.permission.BIND_DEVICE_ADMIN" >
+            <meta-data
+                android:name= "android.app.device_admin"
+                android:resource= "@xml/policies" />
+            <intent-filter>
+                <action android:name= "android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+        </receiver>
+
+
+        <service
+            android:name=".messaging.FirebaseService"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.Send">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.android.c2dm.intent.Recieve" />
+            </intent-filter>
+        </service>
+        <service android:name=".ChargeService" />
+    </application>
+
+</manifest>

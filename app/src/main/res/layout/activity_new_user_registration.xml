@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context=".new_user_registration">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:layout_marginStart="32dp"
+            android:textSize="35sp"
+            android:layout_marginTop="20dp"
+
+            android:textColor="@color/orange"
+            android:fontFamily="sans-serif-black"/>
+
+        <EditText
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="70px"
+            android:layout_marginTop="40dp"
+            android:hint="Enter Your Name"
+            android:layout_marginRight="70px"
+            android:background="@drawable/edittext_border"
+            android:inputType="textPersonName"
+            android:paddingStart="20dp"
+            />
+
+
+
+        <EditText
+            android:id="@+id/user_mail"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="70px"
+            android:layout_marginTop="32dp"
+            android:hint="Enter Your Mail Id"
+            android:layout_marginRight="70px"
+            android:background="@drawable/edittext_border"
+            android:inputType="textEmailAddress"
+            android:paddingStart="20dp"
+            />
+
+        <EditText
+            android:id="@+id/user_username"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="70px"
+            android:layout_marginTop="40dp"
+            android:hint="Create Your Username"
+            android:layout_marginRight="70px"
+            android:background="@drawable/edittext_border"
+            android:inputType="text"
+            android:paddingStart="20dp"
+            />
+
+        <EditText
+            android:id="@+id/user_pass"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="70px"
+            android:layout_marginTop="32dp"
+            android:hint="Create Your Password"
+            android:layout_marginRight="70px"
+            android:background="@drawable/edittext_border"
+            android:inputType="textPassword"
+            android:paddingStart="20dp"
+            />
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <AutoCompleteTextView
+                android:layout_weight="1"
+                android:id="@+id/auto_1"
+                android:layout_marginStart="32dp"
+                android:background="@drawable/textviewauto"
+                android:layout_marginTop="32dp"
+                android:layout_width="0dp"
+                android:hint="Select Gender"
+                android:layout_height= "45dp"
+                android:paddingStart="20dp"
+                android:inputType="none"/>
+            <Spinner
+                android:layout_marginRight="20dp"
+                android:layout_width="30dp"
+                android:layout_height="45dp"
+                android:id="@+id/spinner_1"
+                android:spinnerMode="dialog"
+
+                android:entries="@array/myarray"
+                android:layout_marginEnd="32dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/drop_down"
+                />
+
+            <AutoCompleteTextView
+                android:layout_weight="1"
+                android:id="@+id/auto_2"
+
+                android:layout_marginStart="15dp"
+                android:background="@drawable/textviewauto"
+                android:layout_marginTop="32dp"
+                android:layout_width="0dp"
+                android:hint="Blood Group"
+                android:layout_height= "45dp"
+                android:paddingStart="20dp"
+                android:inputType="none"/>
+            <Spinner
+                android:layout_marginRight="20dp"
+                android:layout_width="30dp"
+                android:layout_height="45dp"
+                android:id="@+id/spinner_2"
+                android:spinnerMode="dialog"
+
+                android:entries="@array/blood_group"
+                android:layout_marginEnd="32dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/drop_down"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <AutoCompleteTextView
+                android:layout_weight="1"
+                android:id="@+id/auto_3"
+
+                android:layout_marginStart="32dp"
+                android:background="@drawable/textviewauto"
+                android:layout_marginTop="32dp"
+                android:layout_width="0dp"
+                android:hint="Select Profession"
+                android:layout_height= "45dp"
+                android:paddingStart="20dp"
+                android:inputType="none"/>
+            <Spinner
+                android:layout_marginRight="32dp"
+                android:layout_width="30dp"
+                android:layout_height="45dp"
+                android:id="@+id/spinner_3"
+                android:spinnerMode="dialog"
+
+                android:entries="@array/profession"
+                android:layout_marginEnd="32dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/drop_down"
+                />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dateTIL">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="55sp"
+                    android:hint="Date of Birth"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/edittext_border"
+                    android:id="@+id/dateFormat"
+                    android:inputType="date"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/user_number"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="70px"
+            android:layout_marginTop="32dp"
+            android:hint="Enter Your Number"
+            android:layout_marginRight="70px"
+            android:background="@drawable/edittext_border"
+            android:inputType="number"
+            android:paddingStart="20dp"
+            />
+
+        <Button
+            android:id="@+id/sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:textSize="25sp"
+            android:text="Sign Up"/>
+
+        <TextView
+            android:id="@+id/already_have_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Already have an account ? "
+            android:textAlignment="center"
+            android:layout_marginBottom="32dp"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+</ScrollView>

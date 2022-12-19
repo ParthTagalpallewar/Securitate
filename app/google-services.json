@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "177170841280",
+    "project_id": "securitate-13bd5",
+    "storage_bucket": "securitate-13bd5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:177170841280:android:fb3d094b189cb6efdbf725",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "177170841280-4hoplbuoq89u50tuaaqj8a7a6ei7d4mi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDH9FoqL04RZ19hR3bLu1imNqJUihNp-2I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "177170841280-4hoplbuoq89u50tuaaqj8a7a6ei7d4mi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

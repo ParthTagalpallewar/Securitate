@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Pocket_Mode">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="30dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginBottom="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+            android:layout_height="wrap_content"
+            android:text="Pocket Mode"/>
+
+        <Switch
+
+            android:id="@+id/switch_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:switchMinWidth="50dp"
+            android:layout_marginLeft="150dp"/>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textSize="16sp"
+        android:text="Automatically phone will indicates that someone is trying to steal your phone."
+        android:layout_marginBottom="30dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="-"/>
+
+
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="30sp"
+        />
+
+
+
+
+
+
+</LinearLayout>

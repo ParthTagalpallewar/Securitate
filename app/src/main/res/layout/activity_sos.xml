@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="30dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginBottom="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+            android:layout_height="wrap_content"
+            android:text="SOS Button"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textSize="16sp"
+        android:text="Press this button in emergency, it will send your location to all people who are using this app along with it will send sms to all your parental contacts."
+        android:layout_marginBottom="30dp"
+        />
+
+
+
+    <!--    Add Contact GUI-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Parental Contacts"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_weight="1"/>
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:layout_marginBottom="5dp">
+
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"
+            android:gravity="right">
+            <Button
+                android:id="@+id/addContactBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Add Contact"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

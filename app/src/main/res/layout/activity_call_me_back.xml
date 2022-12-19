@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="30dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginBottom="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+            android:layout_height="wrap_content"
+            android:text="Call me back"/>
+
+        <Switch
+            android:id="@+id/switch_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:switchMinWidth="50dp"
+            android:layout_marginLeft="150dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textSize="16sp"
+        android:text="If turned on, then this will receive the parental calls without asking you."
+        android:layout_marginBottom="30dp"
+        />
+
+
+
+    <!--    Add Contact GUI-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Parental Contacts"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_weight="1"/>
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:layout_marginBottom="5dp">
+
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"
+            android:gravity="right">
+            <Button
+                android:id="@+id/addContactBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Add Contact"
+                android:enabled="false"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Pocket_Mode">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_margin="30dp"
+            android:fontFamily="sans-serif-black"
+            android:layout_height="wrap_content"
+            android:text="Pocket Mode"/>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/switch_btn"
+            app:switchMinWidth="50dp"
+            android:gravity="center"
+            android:layout_marginStart="120dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="30dp"
+            />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey"
+        android:layout_marginStart="30dp"
+        android:textSize="20sp"
+        android:text="Automatically phone will indicates that \nsomeone is trying to steal your phone"
+        />
+
+<!--    <view-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0.5dp"-->
+<!--        android:layout_marginStart="25dp"-->
+<!--        android:layout_marginEnd="25dp"-->
+<!--        android:layout_marginTop="10dp"/>-->
+
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="30dp"
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Securitate</string>
+
+
+    <string-array name="myarray">
+        <item> Male</item>
+        <item> Female</item>
+        <item> Other</item>
+    </string-array>
+
+    <string-array name="blood_group">
+        <item> A+</item>
+        <item> B+</item>
+        <item> AB+</item>
+        <item> O+</item>
+        <item> O-</item>
+    </string-array>
+
+    <string-array name="profession">
+        <item> Doctor</item>
+        <item> Police</item>
+        <item> Teacher</item>
+        <item> Student</item>
+        <item> Other</item>
+    </string-array>
+
+</resources>
