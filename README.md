@@ -13,7 +13,7 @@ friends, relatives and the peoples in the surrounding
 * Features: 
 1. Call me back system
 2. Anti Stolen Pocket Mode
-3. Insecure Dange Alert (SOS)
+3. Insecure Danger Alert (SOS)
 4. Remote Lock Security 
 5. Charging Safety Mode (For public places)
 
@@ -41,7 +41,7 @@ That’s it! Now, you will get notified through an alarm if any mobile thief
 takes the mobile out of your pants pocket. You can turn off the alarm simply by 
 unlocking the mobile or by turning off the Anti-Stolen Pocket Mode option.
 
-## Insecure Danger Alert
+## Insecure Danger Alert (SOS)
 SOS a new feature that has been introduced in our app to alert somebody 
 in emergency situations. This feature is added in the application due 
 to security concerns. So, what exactly is SOS feature, what the panic button 
